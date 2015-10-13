@@ -11,9 +11,5 @@ compiler:
   - clang
 
 script:
-  - dpkg -L libgmp-dev
   - make gmp
-  - $CC -Wall gmp.c -o gmp -lgmp
-  - $CC -Wall -lgmp gmp.c -o gmp
   - make clean
-
