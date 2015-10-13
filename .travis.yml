@@ -7,5 +7,7 @@ addons:
     - libgmp-dev
 
 script:
+  - dpkg -L libgmp-dev
   - make gmp
+  - make clean
 
