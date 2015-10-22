@@ -1,5 +1,5 @@
 gmp: gmp.c
-	gcc -Wall $< -o $@ -lgmp
+	$(CC) -Wall $< -o $@ -lgmp
 
 clean:
 	rm -f gmp
